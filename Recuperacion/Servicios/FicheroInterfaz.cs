@@ -8,5 +8,8 @@ namespace Recuperacion.Servicios
 {
     internal interface FicheroInterfaz
     {
+
+        public void escribirFicheroLog(string mensaje);
+
     }
 }

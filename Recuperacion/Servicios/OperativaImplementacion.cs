@@ -13,18 +13,25 @@ namespace Recuperacion.Servicios
         public void alta()
         {
             AlumnoDto alum = new AlumnoDto();
+
             Console.WriteLine("introduza el nombre");
             alum.Nombre = Console.ReadLine();
+
             Console.WriteLine("introduza el apellido1");
             alum.Apellido1 = Console.ReadLine();
+
             Console.WriteLine("introduza el apellido2");
             alum.Apellido2 = Console.ReadLine();
+
             Console.WriteLine("introduza el dni");
             alum.Dni = Console.ReadLine();
+
             Console.WriteLine("introduza la direccion");
             alum.Direccion = Console.ReadLine();
+
             Console.WriteLine("introduza el telefono");
             alum.Telefono = Console.ReadLine();
+
             alum.IdAlumno= generarId();
 
             Program.listaAlumno.Add(alum);  
@@ -45,7 +52,7 @@ namespace Recuperacion.Servicios
 
             if(tamanioLista > 0)
             {
-                nuevoId = program.listaAlumno[tamanioLista - 1].IdAlumno + 1;
+                nuevoId = Program.listaAlumno[tamanioLista - 1].IdAlumno + 1;
 
 
             }
