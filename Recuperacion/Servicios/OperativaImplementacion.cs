@@ -32,6 +32,9 @@ namespace Recuperacion.Servicios
             Console.WriteLine("introduza el telefono");
             alum.Telefono = Console.ReadLine();
 
+            Console.WriteLine("Introduzca su fecha de nacimiento");
+            alum.fe
+
             alum.IdAlumno= generarId();
 
             Program.listaAlumno.Add(alum);  

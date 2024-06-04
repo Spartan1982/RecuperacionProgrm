@@ -19,11 +19,12 @@ namespace Recuperacion.Dtos
         string email = "aaaaaaa";
         string telefono ="aaaaaaaa";
         string dni = "aaaaaaa";
+        string FechaNac= "31-12-9999";
         
         public AlumnoDto() { }
 
 
-        public AlumnoDto(long idAlumno, string nombre, string apellido1, string apellido2, string direccion, string email, string telefono)
+        public AlumnoDto(long idAlumno, string nombre, string apellido1, string apellido2, string direccion, string email, string telefono, string FechaNac, AlumnoDto.FechaNac fechaNacimiento)
         {
             this.idAlumno = idAlumno;
             this.nombre = nombre;
@@ -32,6 +33,7 @@ namespace Recuperacion.Dtos
             this.direccion = direccion;
             this.email = email;
             this.telefono = telefono;
+            this.FechaNac = fechaNacimiento;
         }
 
         public long IdAlumno { get => idAlumno; set => idAlumno = value; }
@@ -42,5 +44,6 @@ namespace Recuperacion.Dtos
         public string Email { get => email; set => email = value; }
         public string Telefono { get => telefono; set => telefono = value; }
         public string Dni { get => dni; set => dni = value; }
+        public string FechaNac { get => FechaNac; set => FechaNac = value; }
     }
 }
